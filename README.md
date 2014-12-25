@@ -1,9 +1,9 @@
-OmniAuth Dropbox OAuth2
+OmniAuth Bonnier OAuth2
 =======================
 
-Strategy to authenticate Dropbox in OmniAuth.
+Strategy to authenticate Bonnier in OmniAuth.
 
-It's using the OAuth2 from the [Dropbox API](https://www.dropbox.com/developers)
+It's using the OAuth2 from the Bonnier API
 
 Usage
 -----
@@ -12,20 +12,20 @@ Add the strategy to your `Gemfile` alongside OmniAuth:
 
 ```ruby
 gem 'omniauth'
-gem 'omniauth-dropbox-oauth2'
+gem 'omniauth-bonnier-oauth2'
 ```
 
 Integrate this strategy to your OmniAuth middleware.
 
 ```ruby
 use OmniAuth::Builder do
-  provider :dropbox_oauth2, ENV['DROPBOX_KEY'], ENV['DROPBOX_SECRET']
+  provider :bonnier_oauth2, ENV['BONNIER_KEY'], ENV['BONNIER_SECRET']
 end
 ```
 
 You need to add your key and secret.
 
-Also remember to add the full callback path to your Dropbox App Console, for example: https://example.com/auth/dropbox-oauth2/callback
+Also remember to add the full callback path to your Bonnier App Console, for example: https://example.com/auth/bonnier-oauth2/callback
 
 For more information check the [OmniAuth wiki](https://github.com/intridea/omniauth/wiki).
 
