@@ -1,5 +1,5 @@
 module OmniAuth
-  module DropboxOauth2
+  module BonnierOauth2
     VERSION = "0.1.0"
   end
 end
