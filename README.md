@@ -22,6 +22,6 @@ end
 
 You need to add your key and secret.
 
-Also remember to add the full callback path to your Bonnier App Console, for example: https://example.com/auth/bonnier-oauth2/callback
+Also remember to add the full callback path to your Bonnier App Console, for example: http://example.com/auth/bonnier-oauth2/callback
 
 For more information check the [OmniAuth wiki](https://github.com/intridea/omniauth/wiki).
