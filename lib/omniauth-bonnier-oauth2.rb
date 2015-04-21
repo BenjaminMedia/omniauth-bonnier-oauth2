@@ -1,1 +1,1 @@
-require File.join('omniauth', 'bonnier_oauth2')
+require 'omniauth/bonnier_oauth2'
