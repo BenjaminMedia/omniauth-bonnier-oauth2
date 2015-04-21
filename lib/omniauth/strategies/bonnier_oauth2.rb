@@ -10,18 +10,24 @@ module OmniAuth
         :token_url          => '/api/oauth/token'
       }
 
-      uid { raw_info["user"]["id"] }
+      uid { raw_info["id"].to_s }
 
       info do
         {
-          "email" => raw_info["user"]["email"],
-          "first_name" => raw_info["user"]["first_name"],
-          "last_name" => raw_info["user"]["last_name"]
+          "email" => raw_info["email"],
+          "username" => raw_info["username"],
+          "profile_image" => raw_info["profile_image"]
+        }
+      end
+
+      extra do
+        {
+          'raw_info' => raw_info
         }
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/api/v1/users/current.json').parsed
+        @raw_info ||= access_token.get('/api/v2/users/current.json').parsed
       end
     end
   end
