@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omniauth-bonnier-oauth2 (1.1.0)
+    omniauth-bonnier-oauth2 (1.2.1)
       omniauth-oauth2
 
 GEM
