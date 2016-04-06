@@ -19,7 +19,8 @@ module OmniAuth
           "email" => raw_info["email"],
           "username" => raw_info["username"],
           "profile_image_url" => raw_info["profile_image"].try(:fetch, "url"),
-          "url" => raw_info["url"]
+          "url" => raw_info["url"],
+          "roles" => raw_info["roles"]
         }
       end
 
